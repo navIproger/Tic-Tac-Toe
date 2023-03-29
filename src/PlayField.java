@@ -173,10 +173,10 @@ public class PlayField {
         Dimension dimension = new Dimension(600, 65);
         buttonSet(step, panelStep, 0, 600, dimension);
         step.setSize(dimension);
-        panelStep.add(step);
         panelStep.setBounds(0, 600, 600, 65);
         step.setHorizontalAlignment(SwingConstants.CENTER);
         step.setVerticalAlignment(SwingConstants.CENTER);
+        step.setFont(new Font(step.getFont().getName(), Font.BOLD, 35));
     }
 
     static private void buttonSet(JComponent btn, JPanel panel, int posX, int posY, Dimension dim) {
